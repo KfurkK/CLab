@@ -12,7 +12,7 @@ int pop(struct Node **topPtr);
 void push(struct Node **topPtr, int value);
 struct Node * createStack(int nodeCount);
 int countNodes(struct Node *top);
-struct Node * pushStack(struct Node **stack, struct Node **stac);
+struct Node * pushStack(struct Node **stack1, struct Node **stack2);
 void freeStack(struct Node *top);
 struct Node * sortStack(struct Node **topPtr);
 void printStackValues(struct Node *top);
