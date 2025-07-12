@@ -1,9 +1,14 @@
-Adapted from my final exam question: \
+Problem: Stack Merger & Sorter
+Adapted from 1st year final exam
 
-You are given two stacks that is containing integer values in ascending order (the lowest element is at the top).
-Merge both of the stacks and make a new stack, that is ascending.
-You are allowed to use stacks only (no arrays)
+You are given two stacks, each containing integer values in ascending order (i.e., smallest element is at the top).
 
-Solution:
-* Merge two stacks
-* Sort them using bubble sort
+Objective:
+Merge both stacks into a new stack such that the resulting stack is also in ascending order (lowest at the top).
+
+Constraints:
+You must use only stacks (no arrays, linked lists, or other data structures).
+
+* You may create temporary stacks as needed.
+
+* You can only access stack elements using push(), pop(), and peek()/top() operations.
