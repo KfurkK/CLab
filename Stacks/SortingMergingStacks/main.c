@@ -1,22 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
+#include "stack.h"
 
-
-struct Node {
-    int value; // 4 bytes
-    struct Node *next; // 8 bytes
-    // -> 12 bytes total
-};
-
-int pop(struct Node **topPtr);
-void push(struct Node **topPtr, int value);
-struct Node * createStack(int nodeCount);
-int countNodes(struct Node *top);
-struct Node * pushStack(struct Node **ptrOfTheTopOfTheFirstStack, struct Node **ptrOfTheTopOfTheSecondStack);
-void freeStack(struct Node *top);
-struct Node * sortStack(struct Node **topPtr);
-void printStackValues(struct Node *top);
 
 int main() {
 
@@ -153,6 +139,7 @@ struct Node * sortStack(struct Node **topPtr) {
 
 void printStackValues(struct Node *top) {
     struct Node *temp = top;
+    printf("Sorted: ");
     while (temp != NULL) {
         printf("%d ", temp->value);
         temp = temp->next;
