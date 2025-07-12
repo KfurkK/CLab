@@ -45,6 +45,9 @@ int main() {
 
     topPtr1 = sortStack(&topPtr1);
     printStackValues(topPtr1);
+
+    freeStack(topPtr1);
+
     return 0;
 
 }
@@ -159,4 +162,3 @@ void printStackValues(struct Node *top) {
 
 
 
-// TODO freeMemory()
